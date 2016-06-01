@@ -6,11 +6,24 @@ button {
 	background: white;
 }
 
+h1 {
+	color: white;
+	text-align: center;
+}
+
+p {
+	color: black;
+}
+
 .square {
 	width: 30%;
 	height: 200px;
 	margin: 1.66%;
 	background: black;
+}
+
+.selected {
+	background: blue;
 }
 
 #boxes {
@@ -31,15 +44,4 @@ button {
 	text-align: center;
 }
 
-h1 {
-	color: white;
-	text-align: center;
-}
 
-p {
-	color: black;
-}
-
-.selected {
-	background: blue;
-}

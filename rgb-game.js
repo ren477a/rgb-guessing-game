@@ -21,6 +21,7 @@ easyBtn.addEventListener("click", function(){
 	this.classList.add("selected");
 	for (var i=3; i<6; i++) {					//hide the bottom three squares for easy mode
 		sqrs[i].style.background = "#232323";
+		colors.pop();							//cut the colors array to only three
 	}
 	newGame();
 });
@@ -74,7 +75,7 @@ function generateRandomColors(num) {
 	}
 }
 
-function newGame(){						//new game
+function newGame(){								//new game
 	generateRandomColors(numOfSquares);			//generate random colors and color the squares
 	picked = pickColor();						//pick a random color from the generated colors
 	rgbDisp.textContent = picked;				//display the color to be guessed
