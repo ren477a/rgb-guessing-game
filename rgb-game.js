@@ -1,17 +1,17 @@
 var colors = [" "];
 var sqrs = document.querySelectorAll(".square");
-var msg = document.querySelector("p");
+var msg = document.querySelector("#message");
 var rgbDisp = document.querySelector("#rgb-display");
-var picked;
 var resetBtn = document.querySelector("#reset");
 var easyBtn = document.querySelector("#easy");
 var hardBtn = document.querySelector("#hard");
 var header = document.querySelector("#header");
+var picked;
 var numOfSquares = 6;
 
 newGame();
 
-resetBtn.addEventListener("click", function(){ //start a new game
+resetBtn.addEventListener("click", function(){ 	//start a new game
 	newGame();		
 });
 
@@ -79,7 +79,7 @@ function newGame(){								//new game
 	generateRandomColors(numOfSquares);			//generate random colors and color the squares
 	picked = pickColor();						//pick a random color from the generated colors
 	rgbDisp.textContent = picked;				//display the color to be guessed
-	header.style.background = "rgb(0, 0, 255)";	//set header background to default
+	header.style.background = "steelblue";	//set header background to default
 	resetBtn.textContent = "New Colors";		//reset button text
-	msg.textContent = " ";						//empty message display
+	msg.textContent = "             ";			//empty message display
 }
