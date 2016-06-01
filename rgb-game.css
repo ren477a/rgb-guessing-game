@@ -1,0 +1,25 @@
+body {
+	background: #232323;
+}
+
+
+
+.square {
+	width: 30%;
+	height: 200px;
+	margin: 1.66%;
+	background: black;
+}
+
+#boxes {
+	max-width: 700px;
+	margin: 0, auto;
+}
+
+h1 {
+	color: green;
+}
+
+p {
+	color: white;
+}
